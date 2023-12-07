@@ -1,0 +1,20 @@
+[
+  {
+    "name": "james",
+    "full-name": "james bond",
+    "emp-no": 154,
+    "card-no": 87878787,
+    "father-name": "random bond",
+    "email": "random@email.com",
+    "mobile": "8359476315",
+    "present-address": "random house random place",
+    "permanent-address": "permanent-random house random place",
+    "city": "hyderabad",
+    "pincode": "654684",
+    "company-name": "digital lync",
+    "join-date": "14/02/2023",
+    "gender": "male",
+    "designation": "CEO",
+    "department": "sales"
+  }
+]

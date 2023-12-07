@@ -1,0 +1,13 @@
+[
+  {
+    "emp-name": "james",
+    "emp-code": "007",
+    "card-no": 87878787,
+    "department": "Accounts",
+    "from-date": "09/03/2023",
+    "to-date": "09/03/2023",
+    "no-day-leave": 1,
+    "leave-type": "Casual Leave",
+    "leave-status": "Approved"
+  }
+]

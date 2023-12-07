@@ -1,0 +1,104 @@
+.dash-nav {
+  display: flex;
+  align-items: center;
+}
+.switch-small-screen {
+  display: none;
+}
+.employee-import-container {
+  height: 90%;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  .input-container {
+    width: 33%;
+    p {
+      margin-top: 10px;
+    }
+    .input-text {
+      border: none;
+      background-color: white;
+      border-bottom: 1px solid black;
+      width: 400px;
+      outline: none;
+    }
+    .file-input {
+      width: 306px;
+    }
+    button {
+      margin: 0px 30px 0px 15px;
+      // width: 50px;
+    }
+  }
+}
+.button-container {
+  button {
+    width: 100px;
+    height: 30px;
+    margin: 20px 10px 0px 15px;
+  }
+  .cancel {
+    background-color: grey;
+    color: white;
+    border: none;
+    outline: none;
+    // margin-left: 10px;
+  }
+  .reset {
+    background-color: white;
+  }
+  .import {
+    background-color: black;
+    color: white;
+  }
+}
+.pointer {
+  cursor: pointer;
+}
+.pointer:hover {
+  background-color: rgb(244, 243, 243);
+  border-radius: 5px;
+  // border: 1px solid rgb(226, 226, 226);
+  padding: 2px;
+}
+.display-section {
+  height: 45%;
+  width: 100%;
+  background-color: rgb(14, 82, 82);
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+@media (max-width: 345.5px) {
+  .input-text {
+    width: 5rem !important;
+  }
+  .input-container {
+    width: 5rem !important;
+  }
+  .switch-small-screen {
+    display: block;
+  }
+  .dash-nav {
+    opacity: 0;
+  }
+}
+@media (min-width: 346px) and (max-width: 768.5px) {
+  .input-text {
+    width: 10rem !important;
+  }
+  .switch-small-screen {
+    display: block;
+  }
+  .dash-nav {
+    opacity: 0;
+  }
+  .file-input {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+}

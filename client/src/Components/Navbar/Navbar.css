@@ -1,0 +1,14 @@
+.navbar-container {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  height: 10vh;
+}
+.logo-img {
+  height: 100%;
+  margin-left: 20px;
+}
+.lms-name {
+  margin-top: auto;
+  padding: 5px;
+}

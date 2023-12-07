@@ -1,0 +1,313 @@
+$very-small-mobile: 350px;
+$small-mobile: 600px;
+$tablet: 1100px;
+$laptop: 1400px;
+$small-desktop: 1600px;
+$very-large-desktop: 1600px;
+
+// Removing Styles from link tag
+.item-submenu,
+.item-container {
+  text-decoration: none;
+  color: black;
+}
+
+// Adding background color in item-name
+.highlight {
+  background-color: rgb(208, 206, 206);
+  border-radius: 5px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.containerz {
+  height: 100vh;
+  width: 100vw;
+  max-width: 1600px;
+  display: flex;
+
+  .sidebar-container {
+    overflow: scroll;
+    height: 100%;
+    width: 300px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: black;
+    padding: 0px 20px 0px 20px;
+
+    .company-logo {
+      height: 70px;
+      width: 70px;
+      margin-top: 15px;
+    }
+
+    .profile-logo {
+      height: 70px;
+      object-fit: cover;
+      width: 70px;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+
+    .sidebar-menu {
+      width: 100%;
+      margin-top: 20px;
+
+      .item-container {
+        width: 100%;
+        min-height: 30px;
+        // border: 1px solid grey;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        .item-name {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          position: relative;
+
+          .name-margin {
+            margin-left: 10px;
+          }
+
+          .x-plus {
+            .plus-container {
+              position: absolute;
+              top: 3px;
+              right: 1px;
+            }
+            position: absolute;
+            width: 3px;
+            height: 13px;
+            top: 11px;
+            right: 10px;
+            background-color: rgb(0, 0, 0);
+            transform: rotate(0deg);
+            transition: 0.5s ease-in-out;
+
+            &.close {
+              transform: rotate(90deg);
+            }
+          }
+
+          .y-plus {
+            position: absolute;
+            width: 13px;
+            height: 3px;
+            top: 16px;
+            right: 5px;
+            background-color: rgb(0, 0, 0);
+          }
+        }
+
+        .item-submenu-container {
+          transition: max-height 0.5s ease-in-out, opacity 1s ease-in-out;
+          max-height: 0;
+          opacity: 0;
+          overflow: hidden;
+
+          &.nothing {
+            max-height: 1000px; // Adjust this value as needed
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .right-container {
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 15px;
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 20px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover */
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: black;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  // background: #373a47;
+  // padding: 2.5em 1.5em 0;
+  // font-size: 1.15em;
+  background-color: white;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+// Positioning hamburger icon
+.hham {
+  display: none;
+}
+
+// Controlling hamburger display
+.ham-sidebar-container {
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-color: black;
+  padding: 0px 20px 0px 20px;
+
+  .handel-icons-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .company-logo {
+      height: 70px;
+      width: 70px;
+      margin-top: 15px;
+    }
+
+    .profile-logo {
+      height: 70px;
+      object-fit: cover;
+      width: 70px;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .sidebar-menu {
+    width: 100%;
+    margin-top: 20px;
+
+    .item-container {
+      width: 100%;
+      min-height: 30px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+
+      .item-name {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+
+        .name-margin {
+          margin-left: 10px;
+        }
+
+        .x-plus {
+          .plus-container {
+            position: absolute;
+            top: 3px;
+            right: 1px;
+          }
+          position: absolute;
+          width: 3px;
+          height: 13px;
+          top: 11px;
+          right: 10px;
+          background-color: rgb(0, 0, 0);
+          transform: rotate(0deg);
+          transition: 0.5s ease-in-out;
+
+          &.close {
+            transform: rotate(90deg);
+          }
+        }
+
+        .y-plus {
+          position: absolute;
+          width: 13px;
+          height: 3px;
+          top: 16px;
+          right: 5px;
+          background-color: rgb(0, 0, 0);
+        }
+      }
+
+      .item-submenu-container {
+        transition: max-height 0.5s ease-in-out, opacity 1s ease-in-out;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+
+        &.nothing {
+          max-height: 1000px; // Adjust this value as needed
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $small-mobile) {
+  .sidebar-container {
+    display: none !important;
+  }
+  .hham {
+    display: block;
+  }
+}
+
+@media (min-width: 1600px) {
+  .containerz {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+}

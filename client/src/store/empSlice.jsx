@@ -5,6 +5,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 //api call end
 const initialState = {
+  //Dummy State DATA  going to GET API In here
   employeeApiData: [
     {
       profileImg:

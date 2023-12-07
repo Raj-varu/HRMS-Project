@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
+  //Dummy  DATA  going to GET API In here
   {
     id: 1,
     name: "Bentley",
